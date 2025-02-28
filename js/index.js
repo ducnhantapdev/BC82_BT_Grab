@@ -96,8 +96,9 @@ const tinhTienXe = () => {
   }
   //validate thoi gian cho
   let getThoiGianCho = document.getElementById("txt-thoiGianCho").value * 1;
-  if (getThoiGianCho !== "" && getThoiGianCho < 0) {
+  if (!getThoiGianCho) {
     alert("Vui lòng nhập thời gian chờ");
+    a;
     return;
   }
   let tongTien = 0;
